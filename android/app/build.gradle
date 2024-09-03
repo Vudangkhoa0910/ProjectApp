@@ -37,6 +37,13 @@ android {
             signingConfig = signingConfigs.debug
         }
     }
+
+    // Thêm phần cấu hình Java toolchain
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(11)
+        }
+    }
 }
 
 flutter {
